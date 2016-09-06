@@ -1,14 +1,14 @@
 # learning-ansible-vagrant
 ===
 
-Vagrant repo for learning Ansible
+Vagrant repo for learning Ansible. Forked from Garrett Honeycutt's excellent work.
 
 ===
 
 # Usage
 
 
-`git clone https://github.com/ghoneycutt/learning-ansible-vagrant`
+`git clone https://github.com/gregdek/learning-ansible-vagrant`
 
 `cd learning-ansible-vagrant`
 
