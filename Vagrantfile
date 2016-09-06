@@ -4,8 +4,16 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.box = "centos65-generic"
-  config.vm.box_url = "https://github.com/2creatives/vagrant-centos/releases/download/v6.5.1/centos65-x86_64-20131205.box"
+  # Neither of these work yet, for reasons that are beyond me.
+  # config.vm.box = "fedora/24-cloud-base"
+  # config.vm.box = "centos/7"
+
+  # But this one works, so we'll use it!
+  config.vm.box = "boxcutter/fedora24"
+
+  # These definitely work.
+  # config.vm.box = "centos65-generic"
+  # config.vm.box_url = "https://github.com/2creatives/vagrant-centos/releases/download/v6.5.1/centos65-x86_64-20131205.box"
 
   config.vm.define "admin" do |admin_config|
     admin_config.vm.provision "shell", path: "bootstrap.sh"

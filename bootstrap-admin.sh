@@ -30,4 +30,4 @@ do
 done
 
 # run ansible
-ansible all -m command -a 'cowsay ansible is fun!'
+ansible all -m ping
